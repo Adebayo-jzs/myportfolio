@@ -1,5 +1,5 @@
 body{
-    background: url(/images/premium_photo-1683309565422-77818a287060\ \(1\).avif) no-repeat center center/cover;
+    background-color: #333;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh; /* or any other height you prefer */
