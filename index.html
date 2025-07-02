@@ -18,6 +18,7 @@
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
 
@@ -412,5 +413,26 @@
     });
 </script>
     <script src="script.js"></script>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all anchor tags that have an href starting with '#' (bookmark links)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default jump behavior
+
+                    const targetId = this.getAttribute('href'); // Get the target ID from the href
+                    const targetElement = document.querySelector(targetId); // Find the target element
+
+                    if (targetElement) {
+                        // Smooth scroll to the target element
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
