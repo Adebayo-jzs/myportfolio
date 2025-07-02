@@ -660,7 +660,63 @@ footer {
 
 
 #response-message {
-            margin-top: 20px;
-            text-align: center;
-            font-weight: bold;
-        }
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loading-container{
+    position: fixed;
+    background-color:  white;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    border: 14px solid black; 
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;   border-top: 14px solid #60a5fa;
+    border-bottom: 14px solid  #60a5fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1.4s ease-in-out infinite;
+}
+.loader2{
+    border: 14px solid black; 
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border-top: 14px solid #60a5fa;
+    border-bottom: 14px solid  #60a5fa;
+    animation: spins 1.4s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    /* -webkit-animation:rotate(0deg) ; */
+ }
+  100% {
+  transform: rotate(360deg);
+  /* -webkit-animation:rotate(360deg) ; */
+  }
+}
+@keyframes spins {
+  0% {
+    transform: rotate(720deg);
+    /* -webkit-animation:rotate(0deg) ; */
+ }
+  100% {
+  transform: rotate(0deg);
+  /* -webkit-animation:rotate(360deg) ; */
+  }
+}
+.loading-container.stopload{
+    display: none;
+}

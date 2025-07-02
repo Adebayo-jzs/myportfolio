@@ -29,3 +29,13 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+
+
+
+
+// preloader
+setTimeout(function(){
+    preloader.classList.add("stopload");
+}, 2000)
