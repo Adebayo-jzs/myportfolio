@@ -2,7 +2,7 @@
         .projects-section {
             padding-top: 5rem; /* py-20 */
             padding-bottom: 5rem; /* py-20 */
-            background-color: #ffffff; /* bg-white */
+            background-color: #0d0f12; /* bg-white */
             
         }
 
@@ -83,7 +83,7 @@
         }
 
         .card-hover {
-            background-color: #ffffff; /* bg-white */
+            background-color: #272838; /* bg-white */
             border-radius: 0.5rem; /* rounded-lg */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
             overflow: hidden; /* overflow-hidden */
@@ -118,10 +118,11 @@
             line-height: 1.75rem;
             font-weight: 600; /* font-semibold */
             margin-bottom: 0.5rem; /* mb-2 */
+            color: white;
         }
 
         .card-description {
-            color: #4b5563; /* text-gray-600 */
+            color: white; /* text-gray-600 */
             margin-bottom: 1rem; /* mb-4 */
         }
 
